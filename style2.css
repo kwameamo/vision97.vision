@@ -76,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  margin: 50px 300px 0 300px;
+  margin: 30px 300px 0 300px;
   justify-content: left;
   align-items: left;
   text-align: left;

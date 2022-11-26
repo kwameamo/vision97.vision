@@ -6,6 +6,7 @@
 body {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     background-color: #222328;
     justify-content: center;
     align-items: center;
@@ -15,7 +16,9 @@ body {
 }
 
 .main-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .nav {
@@ -71,7 +74,9 @@ a:active {
 }
 
 .push {
-    padding-top: 100px;
+    /* padding-top: 100px; */
+    display: flex;
+    flex-direction: column;
 }
 
 /* FOOTER START */

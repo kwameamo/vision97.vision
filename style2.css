@@ -191,16 +191,20 @@ button[type="button"]:hover {
 
 /* Slideshow */ /* Slideshow */ /* Slideshow */ /* Slideshow */
 
-.mySlides {display: none}
-.mySlides img {vertical-align: middle;}
+.mySlides {
+  display: none
+}
+
+.mySlides img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  width: 45%;
-  max-width: 1000px;
+  width: 40%;
+  /* max-width: 1000px; */
   position: relative;
   margin: auto;
-  align-items: flex-start;
 }
 
 /* Next & previous buttons */
@@ -314,15 +318,11 @@ h5 a:hover {
 .shop {
   display: flex;
   flex-direction: column;
-  /* top: 200px; */
-  /* left: 50px; */
-  /* width: 90%; */
   height: fit-content;
-  margin: 150px 100px 150px 100px;
+  margin: 0px 100px 150px 100px;
   justify-content: center;
   align-items: center;
   text-align: left;
-  /* background-color: #988a72; */
   color: #888a97;
 } 
 

@@ -271,7 +271,6 @@ button[type="button"]:hover {
 
 .active, .dot:hover {
   background-color: #5a5bd3;
-  opacity: 70%;
 }
 
 /* Fading animation */

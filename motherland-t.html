@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style2.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Space+Mono" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png">
+    <script src="shop-img.js"></script>
     <title>Motherland T — Vision'97</title>
 </head>
 <body>
@@ -31,9 +32,22 @@
 <!-- Content --><!-- Content --><!-- Content -->
         <div class="itemPage">
                 <div class="itemPageL">
-                    <img src="shop-images/MOTee01.png" alt="">
+                    <div class="itemImage-container">
+                        <div class="itemImage fade">
+                            <!-- <img src="shop-images/MOTee01.png" onclick="plusSlides(1)" style="width:100%"> -->
+                            <img src="shop-images/MOTee01.png" style="width:100%">
+                        </div>
+                        
+                        <div class="itemImage fade">
+                            <!-- <img src="shop-images/MOTee02.png" onclick="plusSlides(-1)" style="width:100%;"> -->
+                            <img src="shop-images/MOTee02.png" style="width:100%;">
+                        </div>
+
+                           <a class="prevImg" onclick="plusSlides(-1)">❮</a>
+                           <a class="nextImg" onclick="plusSlides(1)">❯</a>
+                    </div>                
                 </div>
-<!--  -->  
+ <!--  -->       <!--  -->       <!--  -->  
                 <div class="itemPageR">
                     <h2>Motherland T</h2>
                         <ul>
@@ -45,10 +59,10 @@
                     <h3>$35</h3>
                     <select name="size" id="size">
                         <option value="s">SMALL</option>
-                        <option value="s">MEDIUM</option>
-                        <option value="s">LARGE</option>
-                        <option value="s">X LARGE</option>
-                        <option value="s">2X LARGE</option>
+                        <option value="m">MEDIUM</option>
+                        <option value="l">LARGE</option>
+                        <option value="xl">X LARGE</option>
+                        <option value="2xl">2X LARGE</option>
                     </select> <br>
                     <button type="submit">Add to Cart</button>
                     <a href="shop.html"><h2>← BACK TO SHOP</h2></a>
@@ -56,6 +70,9 @@
 
         </div>
 <!-- Content End--><!-- Content End--><!-- Content End-->
+    <script>
+    showSlides(slideIndex);
+   </script>
 
     <footer>
         <div class="social">

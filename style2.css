@@ -197,6 +197,8 @@ button[type="button"]:hover {
 
 .mySlides img {
   vertical-align: middle;
+  touch-action: pan-right pinch-zoom;
+
 }
 
 /* Slideshow container */
@@ -404,6 +406,8 @@ h5 span {
 .itemPageL img {
   width: 500px;
   height: 500px;
+  touch-action: pan-right pinch-zoom;
+
 }
 
 .itemImage-container {
@@ -645,7 +649,7 @@ footer .socialLink:hover {
 
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .bottomNav {
     font-size: x-large;
   }
@@ -743,6 +747,5 @@ footer .socialLink:hover {
     padding: 12px;
     font-size: 15px;
   
-  }
+  } */
 
-}

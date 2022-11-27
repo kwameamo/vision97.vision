@@ -7,6 +7,7 @@ body {
   background-color: #222328;
   font-family: 'Space Mono', monospace;
   padding: 0;
+  min-height: 100vh;
 }
 
 .head{
@@ -532,20 +533,29 @@ footer {
   font-size: 10px;
   color: #888a97;
   padding: 5px 0 10px 0;
-  bottom: 0;
   width: 100%;
+  bottom: 0;
 }
 
-footer .socialLink {
-  color: #888a97;
-  text-decoration: none;
-  transition: 0.5s;
+.socials {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  font-size: 20px;
 }
 
-footer .socialLink:hover {
+.socials a {
   color: #5a5bd3;
   text-decoration: none;
+  transition: 0.5s ease-in-out;
 }
+
+.socials a:hover {
+  color: #888a97;
+}
+
 /* FOOTER END */
 
 
@@ -646,8 +656,9 @@ footer .socialLink:hover {
 
 }
 
-
 }
+
+
 
 /* @media screen and (min-width: 768px) {
   .bottomNav {

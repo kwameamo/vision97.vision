@@ -44,7 +44,7 @@ a:active {
     text-decoration: underline;
 }
 
-.socialLink {
+/* .socialLink {
     color: #888a97;
     text-decoration: none;
     transition: 0.5s;
@@ -53,7 +53,7 @@ a:active {
 .socialLink:hover {
     color: #5a5bd3;
     text-decoration: none;
-}
+} */
 
 .logo {
     display: flex;
@@ -106,6 +106,24 @@ footer {
   }
   /* FOOTER END */
 
+.socials {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    font-size: 30px;
+}
+
+.socials a {
+    color: #5a5bd3;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.socials a:hover {
+    color: #888a97;
+}
 
   /* RESPONSIVENESS */
 

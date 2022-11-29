@@ -322,11 +322,12 @@ h5 a:hover {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  margin: 0px 100px 150px 100px;
+  margin: 0px 0 150px 0;
   justify-content: center;
   align-items: center;
   text-align: left;
-  color: #888a97;
+  color: #888a97;  
+
 } 
 
 .shop h2 {
@@ -336,23 +337,29 @@ h5 a:hover {
 .shopCards {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   text-align: center;
-  column-gap: 30px;
+  /* column-gap: 30px; */
+  border-top: solid 1px #5a5bd3;
+  border-bottom: solid 1px #5a5bd3;
+
 }
 
 .shopItem {
-/* margin-bottom: 20px; */
+  padding: 20px;
   cursor: pointer;
+  justify-content: center;
+
 }
+
+.shopItem:nth-child(1), .shopItem:nth-child(2) {
+    border-right: solid 1px #5a5bd3;
+  }
 
 .shopItem img {
   width: 300px;
   height: 300px;
   transition: 0.5s;
-}
-
-.shopItem img:hover {
-  transform: scale(1.1);
 }
 
 .shopItem h5 a {
@@ -490,6 +497,7 @@ h5 span {
   padding: 5px;
   border: none;
   margin-top: 10px;
+  width: 20%;
   cursor: pointer;
 }
 
@@ -501,12 +509,28 @@ h5 span {
   border: none;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 20%;
   cursor: pointer;
 }
 
 .itemPageR button[type=submit]:hover {
   background-color: #888a97;
 } 
+
+/* .itemPageR input[type=number] {
+  font-family: 'Space Mono', monospace;
+  background-color: #5a5bd3;
+  outline: none;
+  width: 18%;
+  padding: 5px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.itemPageR input[type=number]::placeholder {
+  color: #222328;
+} */
 
 .gallery {
   display: flex;
@@ -584,6 +608,14 @@ footer {
   margin: 10px 30px 100px 30px;
   column-gap: 0px;
 
+}
+
+.shopItem:nth-child(1), .shopItem:nth-child(2) {
+  border-bottom: solid 1px #5a5bd3;
+}
+
+.shopItem:nth-child(1), .shopItem:nth-child(2) {
+  border-right: none;
 }
 
 .itemPageL {

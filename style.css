@@ -5,6 +5,7 @@
 
 body {
     height: 100vh;
+    overflow: hidden;
     background: url(images/bg.jpg);
     display: flex;
     flex-direction: column;
@@ -127,3 +128,9 @@ footer {
 
   /* RESPONSIVENESS */
 
+  @media screen and (max-width: 425px) {
+
+    .nav {
+        font-size: x-small;
+    }
+  }

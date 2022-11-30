@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #222328;
+    background-image: url(images/bg.png);
     justify-content: center;
     align-items: center;
     color: #888a97;

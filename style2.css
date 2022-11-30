@@ -11,9 +11,10 @@ body {
 }
 
 .head{
-/* position: fixed; */
+  position: fixed;
   width: 100%;
   top: 0;
+  z-index: 10;
 }
 
 
@@ -27,14 +28,15 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
   align-items: center;
+  /* border-bottom: #5a5bd3 solid 1px; */
 }
 
 
 .bottomNav {
   width: 100%;
-  padding: 15px 0; 
+  padding: 5px 0; 
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -42,6 +44,7 @@ body {
 
 .logoCentre {
   width: 100%;
+  height: fit-content;
   padding: 0 5px 0 5px;
   align-items: center;
   justify-content: center;
@@ -77,7 +80,7 @@ body {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  margin: 30px 300px 0 300px;
+  margin: 100px 300px 0 300px;
   justify-content: left;
   align-items: left;
   text-align: left;
@@ -89,6 +92,18 @@ body {
 }
 
 /* CONTACT */ /* CONTACT */ /* CONTACT */ /* CONTACT */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: 30px 300px 0 300px;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  color: #888a97;
+} 
+
 .contact-form {
   font-family: 'Space Mono', monospace;
   width: 100%;
@@ -322,7 +337,7 @@ h5 a:hover {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  margin: 0px 0 150px 0;
+  margin: 100px 0 150px 0;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -358,7 +373,6 @@ h5 a:hover {
 
 .shopItem img {
   width: 300px;
-  height: 300px;
   transition: 0.5s;
 }
 
@@ -394,18 +408,20 @@ h5 span {
   display: flex;
   flex-direction: row;
   height: fit-content;
-  margin: 20px 100px 100px 100px;
+  margin: 120px 100px 100px 100px;
   justify-content: center;
   align-items: left;
   text-align: left;
   color: #888a97;
   column-gap: 20px;
+  z-index: -1;
+
 }
 
 .itemPageL {
   display: flex;
   flex-direction: block;
-  width: 50%;
+  width: 65%;
   text-align: right;
   align-items: right;
   justify-content: right;
@@ -413,14 +429,12 @@ h5 span {
 
 .itemPageL img {
   width: 500px;
-  height: 500px;
-  touch-action: pan-right pinch-zoom;
+  z-index: -5;
 
 }
 
 .itemImage-container {
   width: 100%;
-  /* max-width: 1000px; */
   position: relative;
   margin: auto;
 }
@@ -460,10 +474,24 @@ h5 span {
 
 
 .itemPageR {
-  width: 50%;
+  width: 35%;
   margin: 10px;
   text-align: left;
   display: block;
+}
+
+.itemMeta {
+  width: 70%;
+  height: 100%;
+  border: 1px solid #5a5bd3;
+  border-radius: 10px;
+  padding: 10px;
+  /* margin: 10px; */
+}
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .itemPageR ul {
@@ -478,6 +506,11 @@ h5 span {
 .itemPageR a h2 {
   color: #888a97;
   font-size: medium;
+  border: solid 1px #888a97;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  padding: 5px;
+
 }
 
 .itemPageR a {
@@ -488,6 +521,7 @@ h5 span {
 
 .itemPageR a h2:hover {
   color: #5a5bd3;
+  border: solid 1px #5a5bd3;
 }
 
 .itemPageR select {
@@ -496,8 +530,9 @@ h5 span {
   outline: none;
   padding: 5px;
   border: none;
+  border-radius: 5px;
   margin-top: 10px;
-  width: 20%;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -507,9 +542,10 @@ h5 span {
   background-color: #5a5bd3;
   outline: none;
   border: none;
+  border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 20%;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -592,7 +628,7 @@ footer {
 }
 
 .shop {
-  margin: 30px 10px 100px 10px;
+  margin: 100px 10px 100px 10px;
 
 } 
 
@@ -605,7 +641,7 @@ footer {
 .itemPage {
   display: block;
   height: fit-content;
-  margin: 10px 30px 100px 30px;
+  margin: 100px 30px 100px 30px;
   column-gap: 0px;
 
 }
@@ -616,6 +652,11 @@ footer {
 
 .shopItem:nth-child(1), .shopItem:nth-child(2) {
   border-right: none;
+}
+
+
+.itemMeta {
+  padding: 50px;
 }
 
 .itemPageL {
@@ -633,22 +674,24 @@ footer {
 }
 
 .itemPageR {
-  width: 85%;
+  width: 100%;
   text-align: left;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .itemPageR select {
   margin-top: 10px;
-  width: 40%;
+  width: 100%;
 }
 
 .itemPageR button[type=submit] {
-  margin-top: 0px;
+  margin-top: 10px;
   margin-bottom: 10px;
-  width: 40%;
+  width: 100%;
 
 }
 

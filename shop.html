@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="styles.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Space+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css">
     <link rel="shortcut icon" href="images/favicon.png">
@@ -12,21 +13,30 @@
 </head>
 <body>
  <!-- NAVBAR --><!-- NAVBAR --><!-- NAVBAR -->
-    <div class="head">     
-        <div class="nav">
-            <div class="logoCentre">
-                <a href="index.html"><img src="images/Vision97LogoW.svg" alt="Vision'97 Logo"></a>
-            </div>
-            <div class="bottomNav">
-                <a href="#" class="item">Shop</a>
-                <a href="looks.html" class="item">Looks</a>
-                <a href="terms.html" class="item">Terms</a>
-                <!-- <a href="about.html" class="item">About</a> -->
-                <!-- <a href="contact.html" class="item">Contact</a> -->
-                <a href="contact.html" class="item">Contact</a>
-            </div>
-        </div>    
+ <header>
+    <div id="brand">  <a href="http://"> <img src="images/Vision97LogoW.svg" alt="Logo"> </a></div>
+    <nav>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="looks.html">Looks</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+
+      <i id=ti-eye class="ti ti-eye"></i>
+      <i id=ti-eye-off class="ti ti-eye-off"></i>
+
+      <ul class="mobile-menu">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="looks.html">Looks</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </header>
 <!-- NAVBAR --><!-- NAVBAR --><!-- NAVBAR -->
 
 <!-- Content --><!-- Content --><!-- Content -->
@@ -74,6 +84,7 @@
         </div>
 <!-- Content End--><!-- Content End--><!-- Content End-->
 
+<script src="nav-bar.js"></script>
 <footer>
     <div class="socials">
         <a href="https://www.instagram.com/vision97.vision" target="_blank"><i class="ti ti-brand-instagram"></i></a>

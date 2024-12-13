@@ -361,22 +361,25 @@ h5 a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
-  /* column-gap: 30px; */
   border-top: solid 1px #5a5bd3;
   border-bottom: solid 1px #5a5bd3;
-
+  padding: 10px; /* Adds space inside the container */
+  box-sizing: border-box;
 }
 
 .shopItem {
   padding: 20px;
   cursor: pointer;
   justify-content: center;
-
+  border: 1px solid #5a5bd3; /* Adds border to all sides */
+  border-left: none; /* Removes overlapping borders */
+  background-color: #ffffff; /* Optional: Adds a background color */
 }
 
-.shopItem:nth-child(1), .shopItem:nth-child(2) {
-    border-right: solid 1px #5a5bd3;
-  }
+.shopItem:first-child {
+  border-left: 1px solid #5a5bd3; /* Restores the left border for the first item */
+}
+
 
 .shopItem img {
   width: 300px;

@@ -361,8 +361,8 @@ h5 a:hover {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
-  border-top: solid 1px #5a5bd3;
-  border-bottom: solid 1px #5a5bd3;
+/*   border-top: solid 1px #5a5bd3;
+  border-bottom: solid 1px #5a5bd3; */
   box-sizing: border-box;
 }
 

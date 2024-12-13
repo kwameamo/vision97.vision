@@ -363,7 +363,6 @@ h5 a:hover {
   text-align: center;
   border-top: solid 1px #5a5bd3;
   border-bottom: solid 1px #5a5bd3;
-  padding: 10px; /* Adds space inside the container */
   box-sizing: border-box;
 }
 
@@ -373,7 +372,6 @@ h5 a:hover {
   justify-content: center;
   border: 1px solid #5a5bd3; /* Adds border to all sides */
   border-left: none; /* Removes overlapping borders */
-  background-color: #ffffff; /* Optional: Adds a background color */
 }
 
 .shopItem:first-child {

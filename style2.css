@@ -356,7 +356,7 @@ h5 a:hover {
   text-decoration: underline;
 }
 
-.shopCards {
+/* .shopCards {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -378,7 +378,7 @@ h5 a:hover {
 
 .shopItem:first-child {
   border-left: 1px solid #5a5bd3; /* Restores the left border for the first item */
-}
+} */
 
 
 .shopItem img {
